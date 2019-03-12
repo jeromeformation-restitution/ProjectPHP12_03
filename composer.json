@@ -2,5 +2,7 @@
     "name": "stagiaire/restitution-j2",
     "description": "Notre restitution du site",
     "type": "project",
-    "require": {}
+    "require": {
+        "squizlabs/php_codesniffer": "^3.4"
+    }
 }
