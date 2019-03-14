@@ -24,7 +24,7 @@ class App implements RequestHandlerInterface
 
         $middleware = $this->tabMiddlewares[$this->cptMiddleware];
         
-        $this->cptMiddleware++; 
+        $this->cptMiddleware++;
         
         return $middleware->process($request, $this);
         // $controller= new HomeController;
