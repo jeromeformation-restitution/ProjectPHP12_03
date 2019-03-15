@@ -25,7 +25,6 @@ class RouterMiddleware implements MiddlewareInterface
         $controler = $this->router->match($request);
 
 
-        var_dump($controler);
 
 
         if (!is_null($controler)) {

@@ -1,18 +1,19 @@
 <?php
 namespace App\Middleware;
 
+use App\Generique\Controller;
 use GuzzleHttp\Psr7\Response;
-use Psr\Http\Message\ResponseInterface as IResponse;
 use Psr\Http\Server\MiddlewareInterface;
-use Psr\Http\Message\ServerRequestInterface as Request;
+use Psr\Http\Message\ServerRequestInterface;
+use Psr\Http\Message\ResponseInterface as IResponse;
 use Psr\Http\Server\RequestHandlerInterface as Handler;
 
-class HomeController implements MiddlewareInterface
+class HomeController extends Controller
 {
 
 
-    public function process(Request $request, Handler $handler): IResponse
+    public function process(ServerRequestInterface $request, Handler $handler): IResponse
     {
-        return new Response(200, [], 'coucou');
+        return $this->render('home.twig');
     }
 }

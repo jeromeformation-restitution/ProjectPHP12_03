@@ -8,11 +8,13 @@
         "http-interop/response-sender": "^1.0",
         "psr/http-server-handler": "^1.0",
         "psr/http-server-middleware": "^1.0",
-        "zendframework/zend-expressive-fastroute": "^3.0"
+        "zendframework/zend-expressive-fastroute": "^3.0",
+        "twig/twig": "^2.7"
     },
     "autoload": {
         "psr-4":{
-            "App\\":"app"
+            "App\\":"app",
+            "Generique\\":"app/Generique"
         }
     }
 }
